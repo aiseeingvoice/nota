@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const URI = process.env.MONGO_NOTA_URI
+const URI = process.env.MONGO_DOCKER
 mongoose.set('strictQuery', false)
 
 console.log('connecting to', URI.slice(0,30))
