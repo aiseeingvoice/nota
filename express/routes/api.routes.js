@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const noteController = require('../controllers/note.controller')
 
-router.get('/', (req, res) => { res.json({ name: 'my start', website: 'https://tuture.co' }); });
+router.get('/', (req, res) => { res.json({ name: 'my start', website: 'https://leo.co' }); });
 router.post('/new', (req, res) => { res.status(201).json({ msg: 'new, start' }); });
 
 router.get('/notes', noteController.getNotes);
